@@ -111,6 +111,15 @@ lazy.setup({
 			"goolord/alpha-nvim",
 			dependencies = { "nvim-tree/nvim-web-devicons" },
 			config = require("core.plugin.alpha")
+		},
+
+		-- file manager
+		{
+			"stevearc/oil.nvim",
+			keys = {
+				{ "-", mode = "n", "<CMD>Oil<CR>" },
+			},
+			config = require("core.plugin.oil")
 		}
 	},
 
