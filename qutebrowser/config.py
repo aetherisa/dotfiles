@@ -24,7 +24,7 @@ config.set("url.default_page", "www.google.com")
 config.set("statusbar.show", "never")
 
 # miscellaneous
-config.set("downloads.location.directory", "~/download/")
+config.set("downloads.location.directory", "~/downloads/")
 config.set("auto_save.session", True)
 config.set("scrolling.smooth", True)
 
