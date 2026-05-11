@@ -154,6 +154,9 @@ binds {
 	// Mod + Newline = spawn terminal
 	Mod+Return { spawn "prime-run" "ghostty"; }
 
+	// Mod + S = screen shot
+	F10 { screenshot; }
+
 	// Mod + Shift + E = leave niri
 	Mod+Shift+E { quit; }
 }
@@ -205,3 +208,6 @@ cursor {
 hotkey-overlay {
 	skip-at-startup
 }
+
+// path to store screenshot
+screenshot-path "~/pictures/screenshots/%Y-%m-%d_%H-%M-%S.png"
