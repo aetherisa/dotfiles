@@ -1,0 +1,44 @@
+# Commands go through bash
+shell = "bash -c '{}'"
+
+[[items]]
+file = "$XDG_DATA_HOME/base16/ghostty"
+template = "ghostty"
+rewrite = true
+hook = "pkill -SIGUSR2 ghostty"
+
+[[items]]
+file = "$XDG_DATA_HOME/base16/cli"
+template = "fzf"
+rewrite = false
+start = "# Start Fzf"
+end = "# End Fzf"
+hook = "pkill -SIGUSR1 fish"
+
+[[items]]
+file = "$XDG_DATA_HOME/base16/qutebrowser"
+template = "qutebrowser"
+rewrite = true
+hook = "pkill -HUP qutebrowser"
+
+[[items]]
+file = "$XDG_DATA_HOME/base16/nvim"
+template = "nvim"
+rewrite = true
+hook = "pkill -SIGUSR1 nvim"
+
+[[items]]
+file = "$XDG_DATA_HOME/base16/lutgen"
+template = "lutgen"
+rewrite = true
+
+[[items]]
+file = "$XDG_DATA_HOME/base16/quickshell"
+template = "quickshell"
+rewrite = true
+hook = "qs ipc call wallpaper rebuild"
+
+[[items]]
+file = "$XDG_DATA_HOME/base16/zathura"
+template = "zathura"
+rewrite = true

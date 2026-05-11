@@ -1,0 +1,68 @@
+{
+	"wallpaper": {
+		"enable": true,
+		"background": "base02"
+	},
+	"bar": {
+		"enable": true,
+		"margin": {
+			"top": 24,
+			"bottom": 0,
+			"right": 24,
+			"left": 24
+		},
+		"height": 30,
+		"shadow": 5
+	},
+	"volume": {
+		"enable": true,
+		"icons": {
+			"muted": "󰝟",
+			"low": "󰕿",
+			"medium": "󰖀",
+			"high": "󰕾",
+			"micMuted": "󰍭"
+		},
+		"padding": {
+			"left": 12,
+			"right": 12
+		},
+		"background": "base01",
+		"foreground": "base05",
+		"radius": 10.0,
+		"border": {
+			"width": 0,
+			"color": "base05"
+		}
+	},
+	"power": {
+		"enable": true,
+		"padding": {
+			"left": 12,
+			"right": 12
+		},
+		"background": "base01",
+		"foreground": "base05",
+		"radius": 10.0,
+		"border": {
+			"width": 0,
+			"color": "base05"
+		}
+	},
+	"date": {
+		"enable": true,
+		"padding": {
+			"left": 12,
+			"right": 12
+		},
+		"background": "base01",
+		"foreground": "base05",
+		"radius": 10.0,
+		"format": "%m-%d %H:%M",
+		"updatePerSec": "20",
+		"border": {
+			"width": 0,
+			"color": "base05"
+		}
+	}
+}

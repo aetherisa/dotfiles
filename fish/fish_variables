@@ -1,0 +1,5 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR FZF_DEFAULT_OPTS:\x0a\x20\x20\x2d\x2dcolor\x3dbg\x2b\x3a\x23374247\x2cbg\x3a\x232f383e\x2cspinner\x3a\x2383c092\x2chl\x3a\x237fbbb3\x0a\x20\x20\x2d\x2dcolor\x3dfg\x3a\x239da9a0\x2cheader\x3a\x237fbbb3\x2cinfo\x3a\x23dbbc7f\x2cpointer\x3a\x2383c092\x0a\x20\x20\x2d\x2dcolor\x3dmarker\x3a\x2383c092\x2cfg\x2b\x3a\x23e4e1cd\x2cprompt\x3a\x23dbbc7f\x2chl\x2b\x3a\x237fbbb3\x0a
+SETUVAR __fish_initialized:4300
+SETUVAR fish_user_paths:/home/aetheris/\x2ecargo/bin

@@ -1,0 +1,11 @@
+# Font
+set font "CaskaydiaCove Nerd Font normal 12"
+
+# Two page per line
+set pages-per-row 2
+
+# Q with quit is annoying
+unmap q
+
+# Base16 colorscheme
+include /home/aetheris/.local/share/base16/zathura
