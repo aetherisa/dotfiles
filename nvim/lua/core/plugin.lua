@@ -116,6 +116,7 @@ lazy.setup({
 		-- file manager
 		{
 			"stevearc/oil.nvim",
+			lazy = false,
 			keys = {
 				{ "-", mode = "n", "<CMD>Oil<CR>" },
 			},
