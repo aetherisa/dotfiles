@@ -67,6 +67,7 @@ alias l="eza --icons --color=always \
 	--group-directories-first \
 	--sort=name --all"
 
+# Similar to cdi
 alias nvimi='nvim $(fzf)'
 
 # ===============================
