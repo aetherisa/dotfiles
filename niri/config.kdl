@@ -182,6 +182,11 @@ window-rule {
 	open-fullscreen true
 }
 
+window-rule {
+	match app-id="zen"
+	open-fullscreen true
+}
+
 // ================================================
 // Other Configuration
 // ================================================
