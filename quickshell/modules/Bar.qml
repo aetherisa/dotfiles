@@ -20,6 +20,8 @@ PanelWindow {
         bottom: Config.bar.margin.bottom
     }
 
+    mask: Region {}
+
     visible: Config.bar.enable
     color: "transparent"
     implicitHeight: Config.bar.height + Config.bar.shadow * 2
