@@ -6,8 +6,8 @@ set -gx TERM "xterm-256color"
 set -gx COLORTERM "truecolor"
 set -gx EDITOR "nvim"
 set -gx VISUAL "$EDITOR"
-set -gx PAGER "less"
-set -gx MANPAGER "less -R"
+set -gx PAGER "less -R"
+set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 # XDG supports
 set -gx XDG_DATA_HOME "$HOME/.local/share"
@@ -110,3 +110,12 @@ function __reload_fish_config --on-signal USR1
 	source $XDG_CONFIG_HOME/fish/config.fish
 end
 
+# ===============================
+# Others
+# ===============================
+# Auto-start niri on TTY1 after getty login
+if status is-login
+    if test -z "$WAYLAND_DISPLAY"; and test (tty) = /dev/tty1
+        exec niri-session -l
+    end
+end
