@@ -70,6 +70,9 @@ alias l="eza --icons --color=always \
 # Similar to cdi
 alias nvimi='nvim $(fzf)'
 
+# Better bat
+alias bat="bat --style=plain --paging=always"
+
 # ===============================
 # Functions
 # ===============================
