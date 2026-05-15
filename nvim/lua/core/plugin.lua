@@ -121,6 +121,13 @@ lazy.setup({
 				{ "-", mode = "n", "<CMD>Oil<CR>" },
 			},
 			config = require("core.plugin.oil")
+		},
+
+		-- buffer line
+		{
+			"aetherisa/bareline.nvim",
+			lazy = false,
+			config = true
 		}
 	},
 

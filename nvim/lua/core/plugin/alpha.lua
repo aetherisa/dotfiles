@@ -28,12 +28,15 @@ return function()
 		group = augroup,
 		callback = function(env)
 			local laststatus = vim.o.laststatus
+			local showtabline = vim.o.showtabline
 			vim.o.laststatus = 0
+			vim.o.showtabline = 0
 			vim.api.nvim_create_autocmd("BufUnload", {
 				group = augroup,
 				buffer = env.buf,
 				callback = function()
 					vim.o.laststatus = laststatus
+					vim.o.showtabline = showtabline
 				end
 			})
 		end
