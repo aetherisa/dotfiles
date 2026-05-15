@@ -4,8 +4,6 @@
 local tui = {
 	-- stay in center (roughly)
 	scrolloff = 8,
-	-- highlight cursor line
-	cursorline = true,
 	-- report line number
 	number = true,
 	-- 4 space per tab
