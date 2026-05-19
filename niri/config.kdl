@@ -148,8 +148,8 @@ binds {
 	XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
 
 	// XF86MonBrightnessXXXX = backlight control
-	XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--device=amdgpu_bl1" "set" "+10%"; }
-	XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--device=amdgpu_bl1" "set" "10%-"; }
+	XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--device=amdgpu_bl2" "set" "+10%"; }
+	XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--device=amdgpu_bl2" "set" "10%-"; }
 
 	// Mod + Newline = spawn terminal
 	Mod+Return { spawn "prime-run" "ghostty"; }
