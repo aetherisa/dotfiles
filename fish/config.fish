@@ -7,6 +7,7 @@ set -gx COLORTERM "truecolor"
 set -gx EDITOR "nvim"
 set -gx VISUAL "$EDITOR"
 set -gx PAGER "less -R"
+set -gx MANROFFOPT -c
 set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 # XDG supports
