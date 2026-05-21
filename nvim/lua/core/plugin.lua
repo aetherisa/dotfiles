@@ -127,7 +127,7 @@ lazy.setup({
 		{
 			"aetherisa/bareline.nvim",
 			lazy = false,
-			config = true
+			config = require("core.plugin.bareline")
 		}
 	},
 
