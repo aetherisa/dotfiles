@@ -193,7 +193,7 @@ prefer-no-csd
 // terminal on startup
 spawn-sh-at-startup "prime-run ghostty"
 
-// quickshell
+// quickshell on startup
 spawn-at-startup "quickshell"
 
 // start quickshell
