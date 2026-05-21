@@ -104,9 +104,6 @@ binds {
 	Mod+Shift+8 { move-window-to-workspace 8; }
 	Mod+Shift+9 { move-window-to-workspace 9; }
 
-	// Mod + S = switch preset column width
-	Mod+S { switch-preset-column-width; }
-
 	// Mod + L OR H = increase OR decrease column width
 	Mod+L { set-column-width "+10%"; }
 	Mod+H { set-column-width "-10%"; }
@@ -155,7 +152,7 @@ binds {
 	Mod+Return { spawn "prime-run" "ghostty"; }
 
 	// Mod + S = screen shot
-	F10 { screenshot; }
+	Mod+S { screenshot; }
 
 	// Mod + Shift + E = leave niri
 	Mod+Shift+E { quit; }
