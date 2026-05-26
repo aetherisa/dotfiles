@@ -9,3 +9,6 @@ unmap q
 
 # Base16 colorscheme
 include /home/aetheris/.local/share/base16/zathura
+
+# Disable select to copy
+set selection-clipboard false
