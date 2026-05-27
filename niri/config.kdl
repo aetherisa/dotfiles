@@ -184,6 +184,12 @@ window-rule {
 	open-fullscreen true
 }
 
+// fullscreen pdf reader
+window-rule {
+	match app-id="zathura"
+	open-fullscreen true
+}
+
 // ================================================
 // Other Configuration
 // ================================================
