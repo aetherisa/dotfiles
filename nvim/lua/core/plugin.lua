@@ -38,6 +38,9 @@ lazy.setup({
 		{
 			"saghen/blink.cmp",
 			version = "1.*",
+			dependencies = {
+				{ "mikavilpas/blink-ripgrep.nvim", version = "*" },
+			},
 			config = require("core.plugin.blink")
 		},
 

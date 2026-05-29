@@ -57,7 +57,6 @@ return function()
 				show_documentation = false,
 				winblend = vim.o.winblend,
 				treesitter_highlighting = true,
-				show_documentation = false,
 				winhighlight = ""
 			}
 		},
@@ -83,12 +82,31 @@ return function()
 
 		-- improve source
 		sources = {
+			default = { 
+				"lsp", 
+				"buffer", 
+				"path",
+				"ripgrep",
+			},
 			providers = {
+				lsp = {
+					score_offset = 10,
+				},
 				path = {
+					score_offset = 9,
 					opts = {
 						show_hidden_files_by_default = true
 					}
-				}
+				},
+				buffer = {
+					score_offset = 8,
+				},
+				ripgrep = {
+					module = "blink-ripgrep",
+					name = "Ripgrep",
+					score_offset = 7,
+					opts = {},
+				},
 			}
 		}
 	})

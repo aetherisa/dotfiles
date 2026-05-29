@@ -62,10 +62,6 @@ return function()
 										break
 									end
 								end
-
-								if rust_analyzer_attached then
-									vim.cmd("LspRestart rust_analyzer")
-								end
 							else
 								print("Failed to open file: " .. output_file)
 							end
