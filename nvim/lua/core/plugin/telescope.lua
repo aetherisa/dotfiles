@@ -2,6 +2,18 @@
 -- telescope setting
 -------------------------------------------------
 return function()
+	local layout = {
+		layout_strategy = "bottom_pane",
+		layout_config = {
+			height = 0.6,
+			preview_cutoff = 80,
+			prompt_position = "bottom",
+		},
+		border = true,
+		borderchars = { "═", " ", " ", " ", " ", " ", " ", " " },
+		winblend = vim.o.winblend,
+	}
+
 	require("telescope").setup({
 		-- global config
 		defaults = {
@@ -12,20 +24,9 @@ return function()
 			},
 
 			-- better icon
-			prompt_prefix = "",
+			prompt_prefix = " ",
 			selection_caret = " ",
 			multi_icon = " ",
-
-			-- best telescope layout ever
-			layout_strategy = "bottom_pane",
-			layout_config = {
-				height = 0.6,
-				preview_cutoff = 80,
-				prompt_position = "bottom",
-			},
-			border = true,
-			borderchars = { "═", " ", " ", " ", " ", " ", " ", " " },
-			winblend = vim.o.winblend,
 
 			-- more friendly keymap
 			mappings = {
@@ -37,13 +38,19 @@ return function()
 
 		-- specific config
 		pickers = {
-			find_files = {
+			builtin = layout,
+			live_grep = layout,
+			buffers = layout,
+			oldfiles = layout,
+			grep_string = layout,
+			help_tags = layout,
+			find_files = vim.tbl_deep_extend("force", layout, {
 				hidden = true,
-			},
+			}),
 		},
 
-		-- ectensions
-		ectensions = {
+		-- extensions
+		extensions = {
 			fzf = {
 				fuzzy = true,
 				override_generic_sorter = true,

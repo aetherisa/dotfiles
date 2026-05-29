@@ -128,6 +128,19 @@ lazy.setup({
 			"aetherisa/bareline.nvim",
 			lazy = false,
 			config = require("core.plugin.bareline")
+		},
+
+		-- leetcode
+		{
+			"kawre/leetcode.nvim",
+			lazy = "leetcode.nvim" ~= vim.fn.argv(0, -1),
+			dependencies = {
+				"nvim-telescope/telescope.nvim",
+				"nvim-lua/plenary.nvim",
+				"MunifTanjim/nui.nvim",
+				"nvim-web-devicons",
+			},
+			config = require("core.plugin.leetcode")
 		}
 	},
 
