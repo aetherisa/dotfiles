@@ -44,6 +44,7 @@ return function()
 			["<S-Tab>"] = { "select_prev", "fallback" },
 			["<Enter>"] = { "accept", "fallback" },
 			["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
+			["<S-k>"] = { "show_documentation", "hide_documentation", "fallback" }
 		},
 
 		-- builtin signature is ok
